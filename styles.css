@@ -1,0 +1,89 @@
+:root {
+  --pink: #F20746;
+  --blue: #5B92D9;
+  --green: #A7BF4E;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.green {
+  color: var(--green);
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo img {
+  height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-item {
+  float: right;
+}
+
+.nav-buttons {
+  float: right;
+}
+
+.nav-link {
+  display: block;
+}
+  
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.welcome-card {
+  padding: 0 7vw;
+  display: inline-flex;
+}
+
+#projects {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-tile {
+  display: inline-flex;
+  width: 33vw;
+  background-color: rgba(230, 228, 237, 0.9);
+  padding: 10px;
+  max-width: 30vw;
+  box-shadow: 0 4px 2px 0 rgba(89, 102, 110, 0.7), 0 6px 20px 0 rgba(89, 102, 110, 0.7);
+  margin-bottom: 30px;
+
+}
+
+@media screen and (min-width: 768px) {
+  .project-tile {
+    width: 90vw;
+  }
+}
