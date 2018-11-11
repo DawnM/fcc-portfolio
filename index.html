@@ -14,7 +14,7 @@
 
 <body>
   <nav id="navbar">
-    <div><a class="logo" href="#"><span class="pink brand">Dawn</span><span class="blue brand">M</span><span class="grey mono"> | </span><span class="green"> &lt; Developer + Designer &gt;</span></a></div>
+    <div><a class="logo" href="#"><span class="brand"><span class="pink">Dawn</span><span class="blue">M</span></span><span class="grey mono"> | </span><span class="green"> &lt; Developer + Designer &gt;</span></a></div>
     <div>
       <ul class="nav-buttons">
         <li><a href="#welcome-section">Home <span class="sr-only">(current)</span></a></li>
@@ -30,36 +30,39 @@
 
   <main>
     <section id="welcome-section">
-      <div class="intro-inner">
+      <div>
         <h1>MY PORTFOLIO</h1>
-        <div class="quick-info">
-          <div class="info-card">
-            <p class="pink header mono">&lt; where &gt;</p>
-            <p>Stourbridge<br>info@DawnM.uk</p>
-          </div>
-          <div class="info-card">
-            <p class="blue header mono">&lt; what &gt;</p>
-            <p>Portfolio for my: <br>Graphic Design | Web Design | Web Development projects</p>
-          </div>
-          <div class="info-card">
-            <p class="green header mono">&lt; why &gt;</p>
-            <p>The creativity of design combined with <br>the structure of code is my happy place.</p>
-          </div>
-        </div>
-        <div class="form">
-          <form method="POST" action="sendmail.asp">
-            <input class="form-field" type="text" name="YourName" placeholder="Your Name" /> <br />
-            <input class="form-field" type="text" name="EmailAddress" placeholder="Email Address" /> <br />
-            <input class="form-field" type="text" name="Subject" placeholder="Subject" /> <br />
-            <textarea class="form-field" name="Body" rows="5" cols="20" wrap="physical" placeholder="Talk to me"></textarea> <br />
-            <input type="submit" />
-          </form>
-        </div>
       </div>
+
+      <div class="quick-info">
+        <blockquote class="info-card">
+          <p class="pink header mono">&lt; where &gt;</p>
+          <p>Stourbridge<br>info@DawnM.uk</p>
+        </blockquote>
+        <blockquote class="info-card">
+          <p class="blue header mono">&lt; what &gt;</p>
+          <p>Portfolio for my: <br>Graphic Design | Web Design | Web Development projects</p>
+        </blockquote>
+        <blockquote class="info-card">
+          <p class="green header mono">&lt; why &gt;</p>
+          <p>The creativity of design combined with <br>the structure of code is my happy place.</p>
+        </blockquote>
+      </div>
+
+      <div class="form">
+        <form method="POST" action="sendmail.asp">
+          <input class="form-field" type="text" name="YourName" placeholder="Your Name" /> <br />
+          <input class="form-field" type="text" name="EmailAddress" placeholder="Email Address" /> <br />
+          <input class="form-field" type="text" name="Subject" placeholder="Subject" /> <br />
+          <textarea class="form-field" name="Body" rows="5" cols="20" wrap="physical" placeholder="Talk to me"></textarea> <br />
+          <input type="submit" />
+        </form>
+      </div>
+
     </section>
 
     <section id="projects" class="background-grey">
-<!--       <div class="project-tile">
+      <!--       <div class="project-tile">
         <div class="card-header">My Resume</div>
         <div><img class="project-image" src="images/resume-screenshot.png" alt="Screenshot of my resume site"></div>
         <div class="project-body">
@@ -149,26 +152,26 @@
           <a href="https://dawnm.co.uk/dd-quiz-repo" target="_blank">Project Repo</a>
           
         </div>
-      </div>
- -->    </section>
+      </div> --> 
+   </section>
 
 
     <section id="testimonials">
-      <blockquote>
+      <blockquote class="client-quote">
         <i class="fas fa-quote-left quote-l pink"></i><br>
         <p><em>This girl is my little secret. I don’t want to share her!! Detailed, grammatically correct, creative, simplistic, and passionate. Highly impressed.</em></p>
         <p>Shana Del Grosso</p>
         <p>Credit Shrink</p>
         <i class="fas fa-quote-right quote-r pink"></i>
       </blockquote>
-      <blockquote>
+      <blockquote class="client-quote">
         <i class="fas fa-quote-left quote-l blue"></i><br>
         <p><em>Dawn is a pleasure to work with. ... Her flexible style and close attention to detail was valuable to achieving our end goals. It was refreshing to work with someone who shares the same passion and understanding for the business. ...</em></p>
         <p>Sue Bhuller</p>
         <p>Ahloki</p>
         <i class="fas fa-quote-right quote-r blue"></i>
       </blockquote>
-      <blockquote>
+      <blockquote class="client-quote">
         <i class="fas fa-quote-left quote-l green"></i><br>
         <p><em>Second time I have worked with Dawn and again was a great experience, great communication, delivered well before the due date and most importantly created exactly what I was after.</em></p>
         <p>Chris Koen</p>

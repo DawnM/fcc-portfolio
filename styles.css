@@ -49,6 +49,7 @@ a:hover {
 .header {
   font-size: 1.5em;
   font-weight: bold;
+  margin-top: 0;
 }
 
 .mono {
@@ -103,12 +104,8 @@ li {
   height: 100vh;
   padding-top: 70px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; 
-}
-
-.intro-inner {
-  width: 80vw;
 }
 
 h1 {
@@ -124,19 +121,22 @@ h1 {
 }
 
 .quick-info {
-  display: flex;
-  justify-content: space-between;
+/*  justify-content: space-between;
+*/  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 5vw;
 }
 
 .info-card{
-  width: 25vw;
+  width: 30vw;
   background-color: rgba(250, 250, 250, 0.9);
   padding: 2vw;
 }
 
 .form {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .form-field {
@@ -162,7 +162,7 @@ h1 {
   padding: 5vw;
 }
 
-blockquote {
+.client-quote {
   font-size: 1.5em;
   width: 30vw;
   background-color: rgba(250, 250, 250, 0.9);
