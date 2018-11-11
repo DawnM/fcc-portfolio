@@ -2,10 +2,24 @@
   --pink: #F20746;
   --blue: #5B92D9;
   --green: #A7BF4E;
+  --light-grey: #e6e3ea;
+  --mid-grey: #979499;
+  --dark-grey: #414042;
 }
 
 body {
   font-family: Ubuntu, sans-serif;
+  color: var(--dark-grey);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+a:hover {
+ color: var(--blue); 
 }
 
 .pink {
@@ -20,66 +34,164 @@ body {
   color: var(--green);
 }
 
+.background-grey {
+  background-color: var(--dark-grey);
+}
+
+.page {
+  color: var(--light-grey);
+}
+
+.spacer {
+  color: var(--mid-grey);
+}
+
+.header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.mono {
+  font-family: "Ubuntu Mono"
+}
+
 #navbar {
+  background-color: #ffffff;
   position: fixed;
   top: 0;
-  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
 }
+
+.brand {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 2vw;
+/*  float: left;
+*/}
 
 .logo img {
   height: 50px;
+  padding: 10px;
 }
 
-ul {
+.nav-buttons {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    padding: 10px;
+    margin-right: 2vw;
+/*    float: right;
+*/}
+
+li {
+  display: inline-block;
+  padding: 0 10px;
 }
 
-.nav-item {
-  float: right;
-}
-
-.nav-buttons {
-  float: right;
-}
-
-.nav-link {
-  display: block;
-}
-  
 #welcome-section {
+  background: url("images/dm-lighthouse-composite.jpg") no-repeat top center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   height: 100vh;
+  padding-top: 70px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center; 
 }
 
-.welcome-card {
-  padding: 0 7vw;
-  display: inline-flex;
+.intro-inner {
+  width: 80vw;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 5em;
+  margin: 1vw;
+  text-transform: uppercase;
+  font-family: "Vollkorn+SC", serif;
+  letter-spacing: 0.06em;
+  opacity: 0.3;
+  transform: translateZ(-2px);
+}
+
+.quick-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-card{
+  width: 25vw;
+  background-color: rgba(250, 250, 250, 0.9);
+  padding: 2vw;
+}
+
+.form {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-field {
+  width: 33vw;
 }
 
 #projects {
+
   height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  background-color: #fff;
+  padding-top: 70px;
 }
 
-.project-tile {
-  display: inline-flex;
-  width: 33vw;
-  background-color: rgba(230, 228, 237, 0.9);
-  padding: 10px;
-  max-width: 30vw;
-  box-shadow: 0 4px 2px 0 rgba(89, 102, 110, 0.7), 0 6px 20px 0 rgba(89, 102, 110, 0.7);
-  margin-bottom: 30px;
+#testimonials {
+  background: url("images/xd-mobile-design.png") no-repeat top center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5vw;
+}
 
+blockquote {
+  font-size: 1.5em;
+  width: 30vw;
+  background-color: rgba(250, 250, 250, 0.9);
+  padding: 2vw;
+}
+
+.quote-l {
+  float: left;
+}
+
+.quote-r {
+  float: right;
+}
+
+#latest-replit {
+  height: 90vh;
+  padding-top: 70px;
+}
+
+.repl-text {
+  color: var(--light-grey);
+  display: block;
+}
+
+iframe {
+  height: 80vh;
+  width: 80vw;
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {

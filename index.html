@@ -7,126 +7,132 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>DawnM Portfolio</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono|Vollkorn+SC:900" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" type="text/css" />
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
-  <nav class="navbar">
-    <a class="logo" href="#"><img src="images/DawnLogo.png" alt="DawnM face silhouette logo"><span class="pink">Dawn</span><span class="blue">M</span><span class="green"> C-M</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="nav-buttons">
-      <ul>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Testimonials</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
+  <nav id="navbar">
+    <div><a class="logo" href="#"><span class="pink brand">Dawn</span><span class="blue brand">M</span><span class="grey mono"> | </span><span class="green"> &lt; Developer + Designer &gt;</span></a></div>
+    <div>
+      <ul class="nav-buttons">
+        <li><a href="#welcome-section">Home <span class="sr-only">(current)</span></a></li>
+        <li>|</li>
+        <li><a href="#projects">Projects</a></li>
+        <li>|</li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li>|</li>
+        <li><a href="#latest-replit">Repl.it</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <section id=“welcome-section”>
-      <h1>My Portfolio</h1>
-      <div class="card-group">
-        <div class="card welcome-card">
-          <div class="card-body">
-            <h5 class="card-title pink">Where?</h5>
-            <p class="card-text">Stourbridge<br>info@DawnM.uk</p>
+    <section id="welcome-section">
+      <div class="intro-inner">
+        <h1>MY PORTFOLIO</h1>
+        <div class="quick-info">
+          <div class="info-card">
+            <p class="pink header mono">&lt; where &gt;</p>
+            <p>Stourbridge<br>info@DawnM.uk</p>
+          </div>
+          <div class="info-card">
+            <p class="blue header mono">&lt; what &gt;</p>
+            <p>Portfolio for my: <br>Graphic Design | Web Design | Web Development projects</p>
+          </div>
+          <div class="info-card">
+            <p class="green header mono">&lt; why &gt;</p>
+            <p>The creativity of design combined with <br>the structure of code is my happy place.</p>
           </div>
         </div>
-        <div class="card welcome-card">
-          <div class="card-body">
-            <h5 class="card-title blue">What?</h5>
-            <p class="card-text">Portfolio for my: Graphic Design | Web Design | Web Development projects</p>
-          </div>
-        </div>
-        <div class="card welcome-card">
-          <div class="card-body">
-            <h5 class="card-title green">Why?</h5>
-            <p class="card-text">The creativity of design combined with the structure of code is my happy place.</p>
-          </div>
+        <div class="form">
+          <form method="POST" action="sendmail.asp">
+            <input class="form-field" type="text" name="YourName" placeholder="Your Name" /> <br />
+            <input class="form-field" type="text" name="EmailAddress" placeholder="Email Address" /> <br />
+            <input class="form-field" type="text" name="Subject" placeholder="Subject" /> <br />
+            <textarea class="form-field" name="Body" rows="5" cols="20" wrap="physical" placeholder="Talk to me"></textarea> <br />
+            <input type="submit" />
+          </form>
         </div>
       </div>
     </section>
-    <section id="projects">
-      <div class="project-tile">
+
+    <section id="projects" class="background-grey">
+<!--       <div class="project-tile">
         <div class="card-header">My Resume</div>
+        <div><img class="project-image" src="images/resume-screenshot.png" alt="Screenshot of my resume site"></div>
         <div class="project-body">
           <p class="project-text">Code Institute Project 1 of 5, towards software developer diploma. Assesment result of 95%.</p>
           <p>Skills: HTML, CSS</p>
-          <a href="https://dawnm.github.io/DawnM-Resume/" target="_blank">View Project</a>
-          <a href="https://github.com/DawnM/DawnM-Resume" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/resume" target="_blank">View Project</a>
+          <a href="https://dawnm.co.uk/resume-repo" target="_blank">Project Repo</a>
         </div>
       </div>
       <div class="project-tile">
         <div class="card-header">Nomadic Numbers</div>
+        <div><img class="project-image" src="images/dashboard-screenshot.png" alt="Screenshot of my dashboard site"></div>
         <div class="project-body">
           <p class="project-text">Code Institute Project 2 of 5, towards software developer diploma. Assesment result of 87.5%.</p>
           <p>Skills: HTML, CSS, JavaScript</p>
-          <a href="https://dawnm.github.io/moves-dashboard/" target="_blank">View Project</a>
-          <a href="https://github.com/DawnM/moves-dashboard" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/dashboard" target="_blank">View Project</a>
+          <a href="https://dawnm.co.uk/dashboard-repo" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/dashboard-proto" target="_blank">View Prototype</a>
         </div>
       </div>
       <div class="project-tile">
         <div class="card-header">Halloween Hackathon - 1st Place</div>
+        <div><img class="project-image" src="images/hackathon-screenshot.png" alt="Screenshot of our hackathon submission"></div>
         <div class="project-body">
           <p class="project-text">Team hackathon project through Code Institute. Team of 2, with 3.5 hours to build a webpage around 2 keyworks. We were given "develish ghost".</p>
           <p>Skills: HTML, CSS</p>
-          <a href="https://abonello.github.io/The-Monstars/" target="_blank">View Project</a>
-          <a href="https://github.com/DawnM/The-Monstars" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/halloween-hackathon" target="_blank">View Project</a>
+          <a href="https://dawnm.co.uk/hackathon-repo" target="_blank">Project Repo</a>
         </div>
       </div>
       <div class="project-tile">
         <div class="card-header">Tribute Page</div>
+        <div><img class="project-image" src="images/tribute-screenshot.png" alt="Screenshot of a tribute page"></div>
         <div class="project-body">
           <p class="project-text">FreeCodeCampe Project 1. A tribute page meeting specific requirements.</p>
           <p>Skills: HTML, CSS</p>
-          <a href="https://dawnm.github.io/FCC-Tribute-Page/" target="_blank">View Project</a>
-          <a href="https://github.com/DawnM/FCC-Tribute-Page" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/tribute-page" target="_blank">View Project</a>
+          <a href="https://dawnm.co.uk/fcc-tribute-repo" target="_blank">Project Repo</a>
         </div>
       </div>
       <div class="project-tile">
         <div class="card-header">Safari Form</div>
+        <div><img class="project-image" src="images/form-screenshot.png" alt="Screenshot of an online form"></div>
         <div class="project-body">
           <p class="project-text">FreeCodeCampe Project 2. A tribute page meeting specific requirements.</p>
           <p>Skills: HTML, CSS</p>
-          <a href="https://dawnm.github.io/FCC-Survey-Form-Project/" target="_blank">View Project</a>
-          <a href="https://github.com/DawnM/FCC-Survey-Form-Project" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/survey-form" target="_blank">View Project</a>
+          <a href="https://dawnm.co.uk/fcc-form-repo" target="_blank">Project Repo</a>
         </div>
       </div>
       <div class="project-tile">
         <div class="card-header">Online Technical Document</div>
+        <div><img class="project-image" src="images/tech-doc-screenshot.png" alt="Screenshot of technical documentation page"></div>
         <div class="project-body">
           <p class="project-text">FreeCodeCampe Project 3. A technical documentation page meeting specific requirements.</p>
           <p>Skills: HTML, CSS</p>
-          <a href="https://dawnm.github.io/FCC-Technical-Documentation-Page/" target="_blank">View Project</a>
-          <a href="https://github.com/DawnM/FCC-Technical-Documentation-Page" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/tech-doc" target="_blank">View Project</a>
+          <a href="https://dawnm.co.uk/fcc-techdoc-repo" target="_blank">Project Repo</a>
         </div>
       </div>
       <div class="project-tile">
         <div class="card-header">Product Landing Page</div>
+        <div><img class="project-image" src="images/product-screenshot.png" alt="Screenshot of product landing page"></div>
         <div class="project-body">
           <p class="project-text">FreeCodeCampe Project 4. A product landing page meeting specific requirements.</p>
           <p>Skills: HTML, CSS</p>
-          <a href="https://dawnm.github.io/FCC-Product-Landing-Page/" target="_blank">View Project</a>
-          <a href="https://github.com/DawnM/FCC-Product-Landing-Page" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/product-page" target="_blank">View Project</a>
+          <a href="https://dawnm.co.uk/fcc-products-repo" target="_blank">Project Repo</a>
         </div>
       </div>
       <div class="project-tile">
         <div class="card-header">My Personal Blog</div>
+        <div><img class="project-image" src="images/blog-screenshot.png" alt="Screenshot of blog page"></div>
         <div class="project-body">
           <p class="project-text">I try to post regularly about freelance work projects or study progress.</p>
           <p>Skills: Wordpress</p>
@@ -135,19 +141,59 @@
       </div>
       <div class="project-tile">
         <div class="card-header">Discworld Dilemma</div>
+        <div><img class="project-image" src="images/quiz-screenshot.png" alt="Screenshot of quiz prototype"></div>
         <div class="project-body">
           <p class="project-text">Still in development: Code Institute Project 3 of 5, towards software developer diploma. Quiz.</p>
           <p>Skills: HTML, CSS, Python</p>
-          <a href="http://bit.ly/p3-discworld-dilemma" target="_blank">View Prototype</a>
-          <a href="https://github.com/DawnM/discworld-dilemma" target="_blank">Project Repo</a>
+          <a href="https://dawnm.co.uk/dd-quiz-proto" target="_blank">View Prototype</a>
+          <a href="https://dawnm.co.uk/dd-quiz-repo" target="_blank">Project Repo</a>
+          
         </div>
       </div>
+ -->    </section>
+
+
+    <section id="testimonials">
+      <blockquote>
+        <i class="fas fa-quote-left quote-l pink"></i><br>
+        <p><em>This girl is my little secret. I don’t want to share her!! Detailed, grammatically correct, creative, simplistic, and passionate. Highly impressed.</em></p>
+        <p>Shana Del Grosso</p>
+        <p>Credit Shrink</p>
+        <i class="fas fa-quote-right quote-r pink"></i>
+      </blockquote>
+      <blockquote>
+        <i class="fas fa-quote-left quote-l blue"></i><br>
+        <p><em>Dawn is a pleasure to work with. ... Her flexible style and close attention to detail was valuable to achieving our end goals. It was refreshing to work with someone who shares the same passion and understanding for the business. ...</em></p>
+        <p>Sue Bhuller</p>
+        <p>Ahloki</p>
+        <i class="fas fa-quote-right quote-r blue"></i>
+      </blockquote>
+      <blockquote>
+        <i class="fas fa-quote-left quote-l green"></i><br>
+        <p><em>Second time I have worked with Dawn and again was a great experience, great communication, delivered well before the due date and most importantly created exactly what I was after.</em></p>
+        <p>Chris Koen</p>
+        <p>Fiverr Client</p>
+        <i class="fas fa-quote-right quote-r green"></i>
+      </blockquote>
     </section>
+
+    <section id="latest-replit" class="background-grey">
+      <div class="repl-text">
+        <p>Here is a repl.it frame in which you can run the python code that I am building for my Discworld Dilemma quiz.  Click the green play button at the top and answer the questions as they appear in the black pane.</p>
+        <p>You should get 3 chances for each question.</p>
+        <p>Please use the contact form at the top of the page to give me any feedback you might have.</p>
+      </div>
+      <div class="repl-window">
+        <iframe src="https://repl.it/@dawnm/dd-quiz?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+      </div>
+    </section>
+
     <footer>
-      <span class="fab fa-github" id=”profile-link”><a href="https://github.com/DawnM" target="_blank"><p> My Github</p></a></span>
-      <span class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/dawn-caldermurphy" target="_blank"><p> My LinkedIn</p></a></span>
+      <span class="fab fa-github" id=”profile-link”><a href="https://dawnm.co.uk/my-github" target="_blank"><p> My Github</p></a></span>
+      <span class="fab fa-linkedin-in"><a href="https://dawnm.co.uk/my-linkedin" target="_blank"><p> My LinkedIn</p></a></span>
       <span class="fab fa-twitter"><a href="https://twitter.com/DawnM_Created" target="_blank"><p> My Twitter</p></a></span>
     </footer>
+
   </main>
 </body>
 </html>
