@@ -151,22 +151,56 @@ h1 {
 }
 
 #testimonials {
-  background: url("images/xd-mobile-design.png") no-repeat top center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 5vw;
 }
 
+#testimonials::after {
+  content: "";
+  background: url("images/xd-mobile-design.png") no-repeat top center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
 .client-quote {
-  font-size: 1.5em;
+  font-size: 1.2em;
   width: 30vw;
   background-color: rgba(250, 250, 250, 0.9);
   padding: 2vw;
+}
+
+svg {
+  height: 4px;
+  width: 50%;
+  display: block;
+  margin: 0 auto; 
+}
+
+line {
+   stroke: var(--dark-grey);
+   stroke-width: 2px; 
+  }
+
+.client {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.company {
+  font-family: "Ubuntu Mono";
+  text-align: center;
 }
 
 .quote-l {
