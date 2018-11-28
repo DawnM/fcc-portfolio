@@ -5,6 +5,7 @@
   --light-grey: #e6e3ea;
   --mid-grey: #979499;
   --dark-grey: #414042;
+  --ci-orange: #f06339;
 }
 
 body {
@@ -13,13 +14,13 @@ body {
   margin: 0;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: var(--dark-grey);
 }
 
-a:hover {
- color: var(--blue); 
+nav a:hover {
+ color: var(--pink); 
 }
 
 .pink {
@@ -54,6 +55,15 @@ a:hover {
 
 .mono {
   font-family: "Ubuntu Mono"
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
 
 #navbar {
@@ -160,7 +170,7 @@ form > * {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 70px 5vw 5vw 5vw;
+  padding: 70px 5vw;
 }
 
 #testimonials::after {
@@ -217,12 +227,12 @@ line {
 }
 
 #latest-repl {
-  height: 90vh;
-  padding-top: 70px;
+/*  height: 90vh; */
   display: flex;
   flex-direction: row;
-  padding: 70px 2vw 2vw 2vw;
+  padding: 100px 2vw;
   justify-content: space-between;
+  letter-spacing: 0.05em;
 }
 
 .repl-text {
@@ -231,11 +241,43 @@ line {
   margin-right: 1vw;
 }
 
+.repl-text a {
+  text-decoration: none;
+  color: var(--ci-orange);
+}
+
+.repl-text a:hover {
+  text-decoration: underline;
+}
+
 iframe {
   height: 70vh;
   width: 65vw;
   display: block;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark-grey)
+}
+
+footer a:hover {
+  color: var(--pink);
+}
+
+footer .fab {
+  font-size: 2em;
 }
 
 @media screen and (max-width: 768px) {

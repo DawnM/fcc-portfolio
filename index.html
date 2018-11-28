@@ -14,7 +14,7 @@
 
 <body>
   <nav id="navbar">
-    <div><a class="logo" href="#welcome-section"><span class="brand"><span class="pink">Dawn</span><span class="blue">M</span></span><span class="grey mono"> | </span><span class="green"> &lt; Developer + Designer &gt;</span></a></div>
+    <div><a class="logo header" href="#welcome-section"><span class="brand"><span class="pink">Dawn</span><span class="blue">M</span></span><span class="grey mono"> | </span><span class="green"> &lt; Developer + Designer &gt;</span></a></div>
     <div>
       <ul class="nav-buttons">
         <li><a href="#welcome-section">Home <span class="sr-only">(current)</span></a></li>
@@ -51,6 +51,7 @@
 
       <div class="form">
         <form action="https://formspree.io/info@dawnm.uk" method="POST" />
+          <input type="hidden" name="_cc" value="dawn.cm@outlook.com" />
           <input class="form-field" type="text" name="name" placeholder="Your Name" /> <br />
           <input class="form-field" type="email" name="_replyto" placeholder="Email Address" /> <br />
           <input class="form-field" type="text" name="subject" placeholder="Subject" /> <br />
@@ -191,7 +192,7 @@
 
     <section id="latest-repl" class="background-grey xs-hide">
       <div class="repl-text">
-        <p>Here is a repl.it frame in which you can run the python code that I am building for my Discworld Dilemma quiz.  Click the green play button at the top and answer the questions as they appear in the black pane.</p>
+        <p>Here is a repl.it frame in which you can run the raw python version of a quiz I am building for my <a href="https://dawnm.co.uk/code-inst" target="_blank">Code Institute</a> diploma.  Click the green play button at the top and answer the questions as they appear in the black pane.</p>
         <p>You should get 3 chances for each question.</p>
         <p>Please use the contact form at the top of the page to give me any feedback you might have.</p>
       </div>
@@ -201,9 +202,9 @@
     </section>
 
     <footer>
-      <span class="fab fa-github" id=”profile-link”><a href="https://dawnm.co.uk/my-github" target="_blank"><p> My Github</p></a></span>
-      <span class="fab fa-linkedin-in"><a href="https://dawnm.co.uk/my-linkedin" target="_blank"><p> My LinkedIn</p></a></span>
-      <span class="fab fa-twitter"><a href="https://twitter.com/DawnM_Created" target="_blank"><p> My Twitter</p></a></span>
+      <a href="https://dawnm.co.uk/my-github" target="_blank"><span class="fab fa-github" id=”profile-link”><span class="hidden mono"> My Github</span></span></a>
+      <a href="https://dawnm.co.uk/my-linkedin" target="_blank"><span class="fab fa-linkedin-in"><span class="hidden mono"> My LinkedIn</span></span></a>
+      <a href="https://twitter.com/DawnM_Created" target="_blank"><span class="fab fa-twitter"><span class="hidden mono"> My Twitter</span></span></a>
     </footer>
 
   </main>
