@@ -66,6 +66,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  z-index: 3;
 }
 
 .brand {
@@ -121,8 +122,7 @@ h1 {
 }
 
 .quick-info {
-/*  justify-content: space-between;
-*/  display: flex;
+  display: flex;
   flex-direction: row;
   align-items: stretch;
   padding: 5vw;
@@ -137,6 +137,12 @@ h1 {
 .form {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+form > * {
+  margin: 0.5vw;
+  padding: 0.5vw;
 }
 
 .form-field {
@@ -144,7 +150,6 @@ h1 {
 }
 
 #projects {
-
   height: 100vh;
   background-color: #fff;
   padding-top: 70px;
@@ -155,7 +160,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 5vw;
+  padding: 70px 5vw 5vw 5vw;
 }
 
 #testimonials::after {
@@ -211,25 +216,34 @@ line {
   float: right;
 }
 
-#latest-replit {
+#latest-repl {
   height: 90vh;
   padding-top: 70px;
+  display: flex;
+  flex-direction: row;
+  padding: 70px 2vw 2vw 2vw;
+  justify-content: space-between;
 }
 
 .repl-text {
   color: var(--light-grey);
   display: block;
+  margin-right: 1vw;
 }
 
 iframe {
-  height: 80vh;
-  width: 80vw;
+  height: 70vh;
+  width: 65vw;
   display: block;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .project-tile {
     width: 90vw;
+  }
+
+  .xs-hide {
+    display: none;
   }
 }

@@ -14,7 +14,7 @@
 
 <body>
   <nav id="navbar">
-    <div><a class="logo" href="#"><span class="brand"><span class="pink">Dawn</span><span class="blue">M</span></span><span class="grey mono"> | </span><span class="green"> &lt; Developer + Designer &gt;</span></a></div>
+    <div><a class="logo" href="#welcome-section"><span class="brand"><span class="pink">Dawn</span><span class="blue">M</span></span><span class="grey mono"> | </span><span class="green"> &lt; Developer + Designer &gt;</span></a></div>
     <div>
       <ul class="nav-buttons">
         <li><a href="#welcome-section">Home <span class="sr-only">(current)</span></a></li>
@@ -22,8 +22,8 @@
         <li><a href="#projects">Projects</a></li>
         <li>|</li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li>|</li>
-        <li><a href="#latest-replit">Repl.it</a></li>
+        <li class="xs-hide">|</li>
+        <li class="xs-hide"><a href="#latest-repl">My Repl.it</a></li>
       </ul>
     </div>
   </nav>
@@ -50,12 +50,12 @@
       </div>
 
       <div class="form">
-        <form method="POST" action="sendmail.asp">
-          <input class="form-field" type="text" name="YourName" placeholder="Your Name" /> <br />
-          <input class="form-field" type="text" name="EmailAddress" placeholder="Email Address" /> <br />
-          <input class="form-field" type="text" name="Subject" placeholder="Subject" /> <br />
-          <textarea class="form-field" name="Body" rows="5" cols="20" wrap="physical" placeholder="Talk to me"></textarea> <br />
-          <input type="submit" />
+        <form action="https://formspree.io/info@dawnm.uk" method="POST" />
+          <input class="form-field" type="text" name="name" placeholder="Your Name" /> <br />
+          <input class="form-field" type="email" name="_replyto" placeholder="Email Address" /> <br />
+          <input class="form-field" type="text" name="subject" placeholder="Subject" /> <br />
+          <textarea class="form-field" name="message" rows="5" cols="20" wrap="physical" placeholder="Talk to me"></textarea> <br />
+          <input type="submit" value="send" />
         </form>
       </div>
 
@@ -189,13 +189,13 @@
       </blockquote>
     </section>
 
-    <section id="latest-replit" class="background-grey">
+    <section id="latest-repl" class="background-grey xs-hide">
       <div class="repl-text">
         <p>Here is a repl.it frame in which you can run the python code that I am building for my Discworld Dilemma quiz.  Click the green play button at the top and answer the questions as they appear in the black pane.</p>
         <p>You should get 3 chances for each question.</p>
         <p>Please use the contact form at the top of the page to give me any feedback you might have.</p>
       </div>
-      <div class="repl-window">
+      <div class="latest-repl">
         <iframe src="https://repl.it/@dawnm/dd-quiz?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
       </div>
     </section>
