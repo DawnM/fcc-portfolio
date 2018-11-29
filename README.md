@@ -22,4 +22,4 @@ Fulfill the below user stories and get all of the tests to pass. Give it your ow
 * Remember to use the Read-Search-Ask method if you get stuck.
 
 ## Acknowledgments
-* 
+* Elf & Monkey for helping to find and fix the bugs.
