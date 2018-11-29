@@ -14,15 +14,6 @@ body {
   margin: 0;
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--dark-grey);
-}
-
-nav a:hover {
- color: var(--pink); 
-}
-
 .pink {
   color: var(--pink);
 }
@@ -83,15 +74,14 @@ nav a:hover {
   font-size: 2em;
   font-weight: bold;
   margin-left: 2vw;
-/*  float: left;
-*/}
+}
 
-.logo img {
+/*.logo img {
   height: 50px;
   padding: 10px;
 }
 
-.nav-buttons {
+*/.nav-buttons {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -105,13 +95,22 @@ li {
   padding: 0 10px;
 }
 
+nav a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+nav a:hover {
+ color: var(--pink); 
+}
+
 #welcome-section {
   background: url("images/dm-lighthouse-composite.jpg") no-repeat top center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 70px;
   display: flex;
   flex-direction: column;
@@ -169,8 +168,8 @@ form > * {
 
 .project-tile {
   background-color: #fff;
-  width: 25vw;
-  border-radius: 6px;
+/*  width: 25vw;
+*/  border-radius: 6px;
   padding: 9px;
 }
 
@@ -186,6 +185,8 @@ form > * {
 button {
   font-size: 1em;
   color: #fff;
+  border-radius: 3px;
+  margin: 3px;
 }
 
 .project-button {
@@ -303,12 +304,175 @@ footer .fab {
   font-size: 2em;
 }
 
-@media screen and (max-width: 768px) {
-  .project-tile {
+@media screen and (min-width: 421px) and (max-width: 1000px) {
+
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    z-index: 3;
+  }
+
+  #welcome-section {
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .info-card{
+    width: 33vw;
+    -webkit-margin-before: 0.4em;
+    -webkit-margin-after: 0.4em;
+    -webkit-margin-start: 0.4em;
+    -webkit-margin-end: 0.4em;
+  }
+
+  .form-field {
+    width: 60vw;
+  }
+
+  #projects {
+    padding: 100px 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 2vw;
+    grid-auto-flow: row;
+  }
+
+  #testimonials {
+    padding: 100px 5vw;
+  }
+
+  .client-quote {
+    width: 33vw;
+    font-size: 1em;
+    -webkit-margin-before: 0.4em;
+    -webkit-margin-after: 0.4em;
+    -webkit-margin-start: 0.4em;
+    -webkit-margin-end: 0.4em;
+  }
+
+  #latest-repl {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 2vw;
+  }
+
+  iframe {
+    height: 70vh;
     width: 90vw;
   }
 
-  .xs-hide {
+  footer .fab {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .xs-hidden {
     display: none;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .brand {
+    font-size: 1.3em;
+    margin-left: 0;
+  }
+
+    .tagline {
+    font-size: 0.7em;
+    margin-left: 2vw;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    z-index: 3;
+  }
+
+  #welcome-section {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .quick-info {
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vh auto;
+  }
+
+  .info-card{
+    width: 70vw;
+    -webkit-margin-before: 0.4em;
+    -webkit-margin-after: 0.4em;
+    -webkit-margin-start: 0.4em;
+    -webkit-margin-end: 0.4em;
+  }
+
+  .form-field {
+    width: 70vw;
+  }
+
+  #projects {
+    padding: 80px 7vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-gap: 5vw;
+    grid-auto-flow: column;
+  }
+
+  #testimonials {
+    padding: 80px 5vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .client-quote {
+    width: 75vw;
+    font-size: 1em;
+    -webkit-margin-before: 0.4em;
+    -webkit-margin-after: 0.4em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+  }
+
+  #latest-repl {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    font-size: 1.25em;
+    margin-top: 5vh;
+  }
+
+  .nav-buttons {
+    font-size: 0.9em;
+  }
+
+  footer {
+    width: 90vw;
+    justify-content: space-between;
+  }
+
+  footer .fab {
+    font-size: 1em;
   }
 }
