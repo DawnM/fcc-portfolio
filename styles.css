@@ -11,7 +11,8 @@
 body {
   font-family: Ubuntu, sans-serif;
   color: var(--dark-grey);
-  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .pink {
@@ -178,15 +179,17 @@ form > * {
   border: solid 1px var(--dark-grey);
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   height: auto;
 }
 
-button {
+.button {
   font-size: 1em;
   color: #fff;
-  border-radius: 3px;
-  margin: 3px;
+  border-radius: 0 6px;
+  margin: 7px;
+  text-decoration: none;
+  padding: 3px;
 }
 
 .project-button {
