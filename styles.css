@@ -98,8 +98,7 @@ nav a:hover {
     overflow: hidden;
     padding: 10px;
     margin-right: 2vw;
-/*    float: right;
-*/}
+}
 
 li {
   display: inline-block;
@@ -160,9 +159,45 @@ form > * {
 }
 
 #projects {
-  height: 100vh;
+  padding: 90px 5vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 2vw;
+  grid-auto-flow: row;
+}
+
+.project-tile {
   background-color: #fff;
-  padding-top: 70px;
+  width: 25vw;
+  border-radius: 6px;
+  padding: 9px;
+}
+
+.project-image {
+  box-sizing: border-box;
+  border: solid 1px var(--dark-grey);
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+button {
+  font-size: 1em;
+  color: #fff;
+}
+
+.project-button {
+  background-color: var(--blue);
+}
+
+.repo-button {
+  background-color: var(--green);
+}
+
+.prototype-button {
+  background-color: var(--pink);
 }
 
 #testimonials {
@@ -171,22 +206,11 @@ form > * {
   flex-direction: row;
   align-items: flex-start;
   padding: 70px 5vw;
-}
-
-#testimonials::after {
-  content: "";
-  background: url("images/xd-mobile-design.png") no-repeat top center fixed;
+  background: url("images/xd-mobile-design-50.png") no-repeat top center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
 }
 
 .client-quote {
@@ -227,7 +251,6 @@ line {
 }
 
 #latest-repl {
-/*  height: 90vh; */
   display: flex;
   flex-direction: row;
   padding: 100px 2vw;
