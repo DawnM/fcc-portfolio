@@ -456,8 +456,12 @@ footer .fab {
 
 @media screen and (max-width: 320px) {
   .header {
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-top: 5vh;
+  }
+
+  .brand {
+    margin-left: 0;
   }
 
   .nav-buttons {
