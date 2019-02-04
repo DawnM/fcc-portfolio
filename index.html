@@ -58,10 +58,23 @@
           <input class="form-field" type="text" name="name" placeholder="Your Name" /> <br />
           <input class="form-field" type="email" name="_replyto" placeholder="Email Address" /> <br />
           <input class="form-field" type="text" name="subject" placeholder="Subject" /> <br />
-          <textarea class="form-field" name="message" rows="5" cols="20" wrap="physical" placeholder="Talk to me"></textarea> <br />
+          <textarea class="form-field" name="message" rows="5" cols="20" wrap="physical" placeholder="Talk to me" ></textarea> <br />
           <input type="submit" value="send" />
         </form>
       </div>
+
+<!-- Self-contained contact form from CSS Tricks[https://css-tricks.com/nice-and-simple-contact-form/]-->
+      <div class="form" id="contact-area">
+      
+      <form method="post" action="contactengine.php">
+        <input class="form-field" type="text" name="Name" id="Name" placeholder="Your Name" /> <br />
+        <input class="form-field" type="email" name="Email" id="Email" placeholder="Email Address" /> <br />
+        <input class="form-field" type="text" name="Subject" id="Subject" placeholder="Subject" /> <br />
+        <textarea class="form-field" name="Message" rows="5" cols="20" id="Message" wrap="physical" placeholder="Talk to me"></textarea> <br />
+        <input type="submit" name="submit" value="Send" class="submit-button" />
+      </form>
+      
+      <div style="clear: both;"></div>
 
     </section>
 
@@ -199,7 +212,7 @@
         <p>Please use the contact form at the top of the page to give me any feedback you might have.</p>
       </div>
       <div class="latest-repl">
-        <iframe src="https://repl.it/@dawnm/dd-quiz?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        <iframe src="https://repl.it/@dawnm/dd-quiz?lite=true&outputonly=1" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" ></iframe>
       </div>
     </section>
 
