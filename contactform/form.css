@@ -1,0 +1,14 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form > * {
+  margin: 0.5vw;
+  padding: 0.5vw;
+}
+
+.form-field {
+  width: 33vw;
+}
