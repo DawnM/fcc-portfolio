@@ -12,6 +12,8 @@ body {
   font-family: Ubuntu, sans-serif;
   color: var(--dark-grey);
   margin: 0 !important;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .pink {
@@ -87,7 +89,6 @@ body {
 .nav-buttons {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     padding: 10px;
     margin-right: 2vw;
@@ -179,8 +180,7 @@ h1 {
 
 .project-tile {
   background-color: #fff;
-/*  width: 25vw;
-*/  border-radius: 6px;
+  border-radius: 6px;
   padding: 9px;
 }
 
@@ -189,7 +189,7 @@ h1 {
   border: solid 1px var(--dark-grey);
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   height: auto;
 }
 
@@ -502,12 +502,17 @@ footer.fab {
 @media screen and (max-width: 320px) {
 
   .header {
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-top: 5vh;
+  }
+
+  .brand {
+    margin-left: 0;
   }
 
   .nav-buttons {
     font-size: 0.9em;
+    padding: 5px;
   }
 
   .social .fab {
